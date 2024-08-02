@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#add">Add</a></li>
+            <li><a href="#edit">Edit</a></li>
+            <li><a href="#delete">Delete</a></li>
+            <li class="dropdown">
+                <a href="#view" class="dropbtn">View</a>
+                <div class="dropdown-content">
+                    <a href="view-products.html">Products</a>
+                    <a href="view-orders.html">Orders</a>
+                    <a href="view-users.html">Customers</a>
+                    <a href="view-appointments.html">Appointments</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="dashboard">
+        <div class="card">
+            <h2>Users</h2>
+            <a href="view-users.html" class="action-btn">View Users</a>
+            <button class="action-btn delete-btn">Delete User</button>
+            <a class="action-btn delete-btn" href="add-user.html">Add User</a>
+        </div>
+        <div class="card">
+            <h2>Products</h2>
+            <a href="view-products.html" class="action-btn">View Products</a>
+            <button class="action-btn delete-btn">Delete Product</button>
+            <a class="action-btn delete-btn" href="add-product.html">Add Product</a>
+        </div>
+        <div class="card">
+            <h2>Orders</h2>
+            <a href="view-orders.html" class="action-btn">View Orders</a>
+            <button class="action-btn delete-btn">Delete Order</button>
+        </div>
+        <div class="card">
+            <h2>Scheduled Appointments</h2>
+            <a href="view-appointments.html" class="action-btn">View Appointments</a>
+            <button class="action-btn delete-btn">Delete Appointment</button>
+        </div>
+    </div>
+</body>
+</html>
